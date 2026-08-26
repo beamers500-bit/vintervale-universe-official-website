@@ -5,7 +5,7 @@ interface GalleryTileProps {
   onClick?: (item: GalleryItem) => void;
 }
 
-export default function GalleryTile({
+export function GalleryTile({
   item,
   onClick,
 }: GalleryTileProps) {
