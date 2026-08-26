@@ -12,7 +12,9 @@ export const books: Book[] = [
     status: 'published',
     coverImage: undefined,
     coverImageAlt: undefined,
-    synopsis: 'The Vintervale Chronicles follows Princess Seraphina Aurelia von Vintervale, a privileged and demanding young royal whose carefully ordered world begins to unravel after the arrival of an extraordinary talking rabbit: Sir Flopplesworth the Third, better known as Floppy.\n\nWhat begins as an unwelcome lesson in humility grows into a journey far beyond the comforts of palace life — one filled with adventure, magical chaos, danger, friendship and discoveries that will challenge Seraphina's understanding of herself and the world around her.',
+    synopsis: `The Vintervale Chronicles follows Princess Seraphina Aurelia von Vintervale, a privileged and demanding young royal whose carefully ordered world begins to unravel after the arrival of an extraordinary talking rabbit: Sir Flopplesworth the Third, better known as Floppy.
+
+What begins as an unwelcome lesson in humility grows into a journey far beyond the comforts of palace life — one filled with adventure, magical chaos, danger, friendship and discoveries that will challenge Seraphina's understanding of herself and the world around her.`,
     publicationDate: undefined,
     publisher: 'Wholebook Inc.',
     editions: undefined,
@@ -35,7 +37,9 @@ export function getPublishedBooks(): Book[] {
 }
 
 export function getForthcomingBooks(): Book[] {
-  return books.filter((b) => b.status === 'forthcoming' || b.status === 'in-progress');
+  return books.filter(
+    (b) => b.status === 'forthcoming' || b.status === 'in-progress'
+  );
 }
 
 export function getBooksByUniverse(universeId: string): Book[] {
