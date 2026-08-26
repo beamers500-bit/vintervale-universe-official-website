@@ -11,14 +11,20 @@ export const books: Book[] = [
     seriesOrder: 1,
     status: 'published',
     coverImage: '/artwork/vintervale-book-1-front-cover.jpg',
-    coverImageAlt: 'Front cover of The Vintervale Chronicles, Book One, featuring Princess Seraphina Aurelia von Vintervale and Sir Flopplesworth the Third',
+    coverImageAlt:
+      'Front cover of The Vintervale Chronicles, Book One, featuring Princess Seraphina Aurelia von Vintervale and Sir Flopplesworth the Third',
     synopsis: `The Vintervale Chronicles follows Princess Seraphina Aurelia von Vintervale, a privileged and demanding young royal whose carefully ordered world begins to unravel after the arrival of an extraordinary talking rabbit: Sir Flopplesworth the Third, better known as Floppy.
 
 What begins as an unwelcome lesson in humility grows into a journey far beyond the comforts of palace life — one filled with adventure, magical chaos, danger, friendship and discoveries that will challenge Seraphina's understanding of herself and the world around her.`,
     publicationDate: undefined,
     publisher: 'Wholebook Inc.',
     editions: undefined,
-    purchaseLinks: undefined,
+    purchaseLinks: [
+      {
+        retailer: 'Amazon',
+        url: 'https://www.amazon.co.uk/dp/B0GCLKZL7D',
+      },
+    ],
     excerpts: undefined,
     relatedCharacterIds: [
       'char-seraphina',
